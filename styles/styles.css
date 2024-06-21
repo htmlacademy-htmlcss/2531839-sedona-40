@@ -50,7 +50,7 @@ body {
 }
 
 
-/* Pages */
+/* ---Pages--- */
 
 /* Header */
 
@@ -77,4 +77,266 @@ body {
   background-image: url("../images/header/heart.svg");
   width: 20px;
   height: 20px;
+}
+
+/* Main */
+
+/* hero */
+
+.hero {
+  background-color: #c09682;
+  background-image: url("../images/index-html/index-background-sedona.jpg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 485px;
+  text-align: center;
+}
+
+.welcome-svg-text {
+  margin-top: 51px;
+}
+
+/* recommendation-first */
+
+.recommendation-first {
+  width: 1200px;
+  height: 261px;
+  padding-bottom: 21px;
+}
+
+.rec-header-text {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 69px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.rec-main-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 25px;
+  margin: 0;
+}
+
+/* advantages-first */
+
+.advantages-first {
+  width: 1200px;
+  height: 1155px;
+  text-align: center;
+}
+
+.advantages-first img {
+  display: block;
+}
+
+.black-text {
+  color: #000000;
+}
+
+.adv-header-text {
+  text-transform: uppercase;
+}
+
+.adv-first-list .adv-item:nth-child(1),
+.adv-first-list .adv-item:nth-child(5) {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.adv-first-list .adv-item:nth-child(2),
+.adv-first-list .adv-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-first .adv-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* recommendation-second */
+
+.recommendation-second {
+  width: 1200px;
+  height: 246px;
+}
+
+.recommendation-second .rec-header-text {
+  padding-top: 64px;
+}
+
+.recommendation-second .rec-main-text {
+  padding-top: 25px;
+}
+
+/* advantages-second */
+
+.advantages-second {
+  width: 1200px;
+  height: 385px;
+  text-align: center;
+}
+
+.adv-second-list .adv-item:nth-child(1),
+.adv-second-list .adv-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.adv-second-list .adv-header-text {
+  color: #000000;
+}
+
+.house-icon {
+  display: block;
+  background-image: url("../images/index-html/advantage-icon-house.svg");
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food-icon {
+  display: block;
+  background-image: url("../images/index-html/Advantage-icon-food.svg");
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gift-icon {
+  display: block;
+  background-image: url("../images/index-html/advantage-icon-gift.svg");
+  width: 75px;
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* book-hotel */
+
+.book-hotel {
+  width: 1200px;
+  height: 406px;
+}
+
+.book-header-text {
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 96px;
+  margin: 0;
+}
+
+.book-main-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.search-hotel-btn {
+  margin-top: 54px;
+}
+
+/* subscription */
+
+.subscription {
+  color:#ffffff;
+  width: 1200px;
+  height: 414px;
+  text-align: center;
+  background-color: #756157;
+  background-image: url("../images/index-html/subscribe-background-blur.jpg");
+}
+
+.sub-header-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-top: 96px;
+  margin: 0;
+}
+
+.sub-main-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.get-subscription {
+  padding-top: 54px;
+}
+
+.get-subscription .email {
+  width: 452px;
+  height: 52px;
+  line-height: 24px;
+  padding-left: 20px;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.get-subscription .button {
+  background-color: #82B3D3;
+  width: 232px;
+  height: 52px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+/* page-footer */
+
+.page-footer {
+  width: 1200px;
+  height: 120px;
+}
+
+.vkontakte {
+  display: block;
+  background-image: url("../images/footer/vk.svg");
+  width: 24px;
+  height: 14px;
+}
+
+.telegram {
+  display: block;
+  background-image: url("../images/footer/telegram.svg");
+  width: 18px;
+  height: 16px;
+}
+
+.youtube {
+  display: block;
+  background-image: url("../images/footer/youtube.svg");
+  width: 22px;
+  height: 17px;
+}
+
+.phone-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.academy-link {
+  display: block;
+  background-image: url("../images/footer/htmlacademy-logo.svg");
+  width: 115px;
+  height: 33px;
 }
