@@ -17,13 +17,13 @@
         </a>
         <ul class="nav-pages-list">
           <li class="nav-item">
-            <a class="nav-link current-page" href="index.html">Главная</a>
+            <a class="nav-link" href="index.html">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
+            <a class="nav-link current-page" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -127,12 +127,14 @@
                 </li>
               </ul>
             </fieldset>
-            <label class="filter-button">
-              <input class="button-submit" type="submit" value="Применить">
-            </label>
-            <label class="filter-button">
-              <input class="button-reset" type="reset" value="Сбросить">
-            </label>
+            <div class="filter-buttons-container">
+              <label class="filter-button">
+                <input class="button-submit" type="submit" value="Применить">
+              </label>
+              <label class="filter-button">
+                <input class="button-reset" type="reset" value="Сбросить">
+              </label>
+            </div>
           </form>
         </section>
 
@@ -166,8 +168,10 @@
 
           <ul class="hotels-list">
             <li class="hotel-item">
-              <img class="hotel-image" src="images/catalog-html/hotel-1.jpg" width="300" height="212" alt="Отель-1">
-              <h3 class="hotel-title">Amara Resort & Spa</h3>
+              <a class="link-to-hotel" href="#">
+                <img class="hotel-image" src="images/catalog-html/hotel-1.jpg" width="300" height="212" alt="Отель-1">
+                <h3 class="hotel-title">Amara Resort & Spa</h3>
+              </a>
               <ul class="params-list">
                 <li class="left-params-item">
                   <p class="hotel-name">Гостиница</p>
@@ -185,8 +189,10 @@
             </li>
 
             <li class="hotel-item">
-              <img class="hotel-image" src="images/catalog-html/hotel-2.jpg" width="300" height="212" alt="Отель-2">
-              <h3 class="hotel-title">Villas at Poco Diablo</h3>
+              <a class="link-to-hotel" href="#">
+                <img class="hotel-image" src="images/catalog-html/hotel-2.jpg" width="300" height="212" alt="Отель-2">
+                <h3 class="hotel-title">Villas at Poco Diablo</h3>
+              </a>
               <ul class="params-list">
                 <li class="left-params-item">
                   <p class="hotel-name">Гостиница</p>
@@ -204,8 +210,10 @@
             </li>
 
             <li class="hotel-item">
-              <img class="hotel-image" src="images/catalog-html/hotel-3.jpg" width="300" height="212" alt="Отель-3">
-              <h3 class="hotel-title">Desert Quail Inn</h3>
+              <a class="link-to-hotel" href="#">
+                <img class="hotel-image" src="images/catalog-html/hotel-3.jpg" width="300" height="212" alt="Отель-3">
+                <h3 class="hotel-title">Desert Quail Inn</h3>
+              </a>
               <ul class="params-list">
                 <li class="left-params-item">
                   <p class="hotel-name">Гостиница</p>
@@ -223,8 +231,10 @@
             </li>
 
             <li class="hotel-item">
-              <img class="hotel-image" src="images/catalog-html/hotel-4.jpg" alt="Отель-4">
-              <h3 class="hotel-title">GreenTree Inn</h3>
+              <a class="link-to-hotel" href="#">
+                <img class="hotel-image" src="images/catalog-html/hotel-4.jpg" alt="Отель-4">
+                <h3 class="hotel-title">GreenTree Inn</h3>
+              </a>
               <ul class="params-list">
                 <li class="left-params-item">
                   <p class="hotel-name">Гостиница</p>
