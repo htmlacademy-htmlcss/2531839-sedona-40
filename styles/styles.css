@@ -724,7 +724,7 @@ body {
   height: 48px;
 }
 
-.catalog-view-item:not(:nth-child(3)) {
+.catalog-view-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -756,25 +756,40 @@ body {
   height: 14px;
 }
 
+
 /* ul hotels-list */
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 20px;
+
+  /* bottom border line */
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
   padding-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
   list-style-type: none;
-  min-height: 896px;
+  min-height: 438px;
+  /* min-height: 896px; */
 }
 
 .hotel-item {
-  width: 340px;
-  min-height: 438px;
-  padding-right: 20px;
-  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  /* display: grid; */
+  /* grid-template-columns: 140px 140px; */
+  /* gap: 16px 20px; */
+
+  /* width: 340px; */
+  /* min-height: 438px; */
+
   /* border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
@@ -782,31 +797,46 @@ body {
   height: 438px; */
 }
 
-.hotel-item:nth-child(3n) {
-  padding-right: 0;
-}
-
-.hotel-item img {
-  display: block;
-  padding-bottom: 16px;
-}
-
 .link-to-hotel {
-  text-decoration: none;
+  /* text-decoration: none; */
+}
+
+.hotel-image {
+  display: block;
 }
 
 .hotel-title {
+  display: inline-block;
   color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
   padding: 0;
-  padding-bottom: 16px;
 }
 
 .params-list {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.left-params-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 140px;
+  align-items: flex-start;
+}
+
+.right-params-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 140px;
+  align-items: flex-end;
 }
 
 .hotel-name {
@@ -814,11 +844,17 @@ body {
   padding: 0;
 }
 
+.hotel-about-link {
+  padding: 8px 0;
+  align-self: stretch;
+}
+
 .stars-rating {
-  display: block;
+  /* display: block; */
   margin: 0;
   padding: 0;
   background-image: url("../images/catalog-html/rating-star.svg");
+  background-repeat: no-repeat;
   width: 18px;
   height: 17px;
 }
@@ -830,13 +866,22 @@ body {
 
 .add-to-favorites {
   background-color: #82B3D3;
+  padding: 8px 0;
+  align-self: stretch;
 }
 
 .rating-text {
   margin: 0;
-  padding: 0;
+  padding: 8px 0;
   background-color: #F2F2F2;
+  align-self: stretch;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
+
 
 /* ul pagination */
 .pagination {
