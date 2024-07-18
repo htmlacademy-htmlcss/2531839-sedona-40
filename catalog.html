@@ -100,7 +100,7 @@
               </fieldset>
 
               <fieldset class="filter-field radiobuttons-field">
-                <legend class="filter-title">Тип жилья:</legend>
+                <legend class="filter-title">Тип Жилья:</legend>
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="param-field">
@@ -127,25 +127,29 @@
             <div class="filter-field-right-wrapper">
               <fieldset class="filter-field price-field">
                 <legend class="filter-title">Стоимость, ₽:</legend>
+                <div class="min-max-price-field">
+                  <label class="param-field-price">
+                    <input class="input-text-field low-price" type="number" name="low-price" min="0" max="15000"
+                      value="0">
+                    <span class="placeholder-price">от</span>
+                  </label>
+                  <label class="param-field-price">
+                    <input class="input-text-field high-price" type="number" name="high-price" min="0" max="15000"
+                      value="9000">
+                    <span class="placeholder-price">до</span>
+                  </label>
+                </div>
 
-                <ul class="filter-list">
-                  <li class="filter-item min-max-price-field">
-                    <label class="param-field">
-                      <input class="input-price-field low-price" type="number" name="low-price" min="0" max="15000" value="0">
-                      <span class="placeholder-price">от</span>
-                    </label>
-                    <label class="param-field">
-                      <input class="input-price-field high-price" type="number" name="high-price" min="0" max="15000" value="9000">
-                      <span class="placeholder-price">до</span>
-                    </label>
-                  </li>
-                  <li class="filter-item">
-                    <label class="param-field">
-                      <input class="range-price" type="range" name="price-between" min="0" max="12000" value="9000"
-                        step="100">
-                    </label>
-                  </li>
-                </ul>
+                <div class="price-range">
+                  <div class="range-bar" style="left: 0x; width: 226px">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-field buttons-field">
                 <button class="button btn-blue" type="submit">Применить</button>

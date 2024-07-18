@@ -231,7 +231,7 @@ body {
 }
 
 .navigation .nav-link:focus {
-  outline: 3px solid #0f286a;
+  outline: 3px solid #83B3D3;
   background-color: #d3d3d3;
 }
 
@@ -915,7 +915,7 @@ body {
 }
 
 .filter-field:focus-within {
-  outline: 3px solid #68A2CA;
+  outline: 3px solid #83B3D3;
 }
 
 
@@ -953,9 +953,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 191px;
-  /* min-height: 104px; */
+  min-height: 104px;
   margin-top: 56px;
   margin-left: 30px; /* Отступ, чтобы не склеились блоки при изменении текста */
+}
+
+.buttons-field .button[type="submit"] {
+  margin-bottom: 32px;
 }
 
 
@@ -963,6 +967,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  padding: 0;
   padding-bottom: 32px;
 }
 
@@ -972,13 +977,25 @@ body {
   list-style-type: none;
 }
 
-.param-field {
+.param-field,
+.param-field-price {
   position: relative;
   display: flex;
+  transition: opacity 0.5s, outline 0.5s;
 }
 
 .filter-item:not(:last-child) {
   padding-bottom: 16px;
+}
+
+.param-field:hover {
+  opacity: 0.6;
+}
+.param-field:focus {
+  outline: 3px solid #83B3D3;
+}
+.param-field:active {
+  opacity: 0.3;
 }
 
 
@@ -1039,6 +1056,7 @@ body {
 /* Price range */
 .min-max-price-field {
   display: flex;
+  margin-bottom: 44px;
   /* min-width: 288px; */
 }
 
@@ -1046,7 +1064,7 @@ body {
   width: 143px;
 } */
 
-.input-price-field {
+.input-text-field {
   width: 143px;
   box-sizing: border-box;
   padding: 12px 20px;
@@ -1054,14 +1072,20 @@ body {
   font-weight: 700;
   line-height: 24px;
   border: none;
+  background-color: #F2F2F2;
+  transition: background-color 0.5s;
 }
 
 /* Remove up/down pins */
-.input-price-field::-webkit-outer-spin-button,
-.input-price-field::-webkit-inner-spin-button {
+.param-field-price .input-text-field::-webkit-outer-spin-button,
+.param-field-price .input-text-field::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+.param-field-price .input-text-field[type=number] {
+  -moz-appearance: textfield; /* for firefox */
+}
+
 
 .low-price {
   border-radius: 4px 0 0 4px;
@@ -1080,7 +1104,58 @@ body {
   transform: translateY(50%);
 }
 
+.input-text-field:hover {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+.input-text-field:focus {
+  outline: 3px solid #83B3D3;
+}
 
+
+/* price range element */
+.price-range {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0;
+}
+
+.range-toggle:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.range-toggle:focus {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  outline: 3px solid #83B3D3;
+}
+.range-toggle:active {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
+}
 
 
 /* catalog */
