@@ -34,31 +34,6 @@ body {
   background-color: #ffffff;
 }
 
-/* body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1400px;
-  background-color: #000000;
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  z-index: -1; */
-
-  /* F2F2F2 */
-
-  /* background-color: #000000;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 16px 16px;
-
-  background-size:     cover;
-  background-repeat:   no-repeat;
-  background-position: center center; */
-/* } */
-
 
 .button {
   display: inline-block;
@@ -927,26 +902,62 @@ body {
   background-repeat: no-repeat;
 }
 
-
+/* Filter parameters */
 .filter-params {
   display: flex;
+  justify-content: space-between;
 }
 
 .filter-field {
   margin: 0;
   padding: 0;
-  min-width: 150px;
-  padding-right: 70px;
   border-style: none;
 }
 
-.filter-field:nth-child(2) {
-  padding-right: 140px;
+.filter-field:focus-within {
+  outline: 3px solid #68A2CA;
 }
 
-.filter-field:nth-child(3) {
+
+/* Левый блок с чекбоксами и радио кнопками */
+.filter-field-left-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+}
+
+.filter-field-left-wrapper .checkboxes-field {
+  min-width: 151px;
+}
+
+.filter-field-left-wrapper .radiobuttons-field {
+  min-width: 151px;
+  margin-left: 30px; /* Отступ, чтобы не склеились блоки при изменении текста */
+}
+
+
+/* Правый блок с ценой и кнопками отправки и сброса */
+.filter-field-right-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 549px;
+}
+
+.filter-field-right-wrapper .price-field {
   min-width: 288px;
 }
+
+/* Filter buttons */
+.filter-field-right-wrapper .buttons-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 191px;
+  /* min-height: 104px; */
+  margin-top: 56px;
+  margin-left: 30px; /* Отступ, чтобы не склеились блоки при изменении текста */
+}
+
 
 .filter-title {
   font-weight: 700;
@@ -961,31 +972,115 @@ body {
   list-style-type: none;
 }
 
-.filter-item {
-  line-height: 23px;
+.param-field {
+  position: relative;
+  display: flex;
 }
 
 .filter-item:not(:last-child) {
   padding-bottom: 16px;
-}  /* как убрать снизу отступ */
+}
 
-.low-price,
-.high-price {
+
+/* Checkbox */
+.input-parameter {
+  margin: auto 0;
+}
+
+.input-parameter[type="checkbox"] {
+  appearance: none;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+.input-parameter[type="checkbox"]:checked {
+  background-image: url("../images/tick-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.label-text {
+  position: relative;
+  line-height: 23px;
+  align-self: center;
+  padding-left: 16px;
+}
+
+/* Radiobutton */
+.input-parameter[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+}
+
+/* .input-parameter[type="radio"]:checked + .label-text::before {
+  position: absolute;
+  transform: translateY(55%) translateX(-31.5px);
+  width: 11px;
+  height: 11px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+} */
+
+.input-parameter[type="radio"]:checked {
+  background-image: url("../images/tick-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+
+/* Price range */
+.min-max-price-field {
+  display: flex;
+  /* min-width: 288px; */
+}
+
+/* .min-max-price-field .param-field {
+  width: 143px;
+} */
+
+.input-price-field {
+  width: 143px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  padding-right: 45px;
+  font-weight: 700;
   line-height: 24px;
+  border: none;
 }
 
-/* form buttons */
-.filter-buttons-container {
-  /* display: flex;
-  flex-direction: column;
-  box-sizing: border-box; */
-  width: 191px;
-  height: 104px;
+/* Remove up/down pins */
+.input-price-field::-webkit-outer-spin-button,
+.input-price-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
-.filter-buttons-container .button {
-  padding: 8px 50px;
+.low-price {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
 }
+
+.high-price {
+  border-radius: 0 4px 4px 0;
+}
+
+.placeholder-price {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 24px;
+  right: 20px;
+  transform: translateY(50%);
+}
+
+
 
 
 /* catalog */

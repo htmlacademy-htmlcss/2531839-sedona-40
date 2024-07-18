@@ -68,82 +68,89 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="#">Гостиницы</a>
+                <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
           </header>
 
           <form class="filter-params" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="filter-field">
-              <legend class="filter-title">Инфраструктура:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="checkbox" name="pool" value="pool" checked> Бассейн
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="checkbox" name="parking" value="parking" checked> Парковка
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="filter-field-left-wrapper">
+              <fieldset class="filter-field checkboxes-field">
+                <legend class="filter-title">Инфраструктура:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="checkbox" name="pool" value="pool" checked>
+                      <span class="label-text">Бассейн</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="checkbox" name="parking" value="parking" checked>
+                      <span class="label-text">Парковка</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="checkbox" name="wi-fi" value="wi-fi">
+                      <span class="label-text">Wi-Fi</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-field">
-              <legend class="filter-title">Тип жилья:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="radio" name="house-type" value="hotel" checked> Гостиница
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="radio" name="house-type" value="motel"> Мотель
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="input-params" type="radio" name="house-type" value="apartments"> Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="filter-field radiobuttons-field">
+                <legend class="filter-title">Тип жилья:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="radio" name="house-type" value="hotel" checked>
+                      <span class="label-text">Гостиница</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="radio" name="house-type" value="motel">
+                      <span class="label-text">Мотель</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="input-parameter" type="radio" name="house-type" value="apartments">
+                      <span class="label-text">Апартаменты</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-            <fieldset class="filter-field">
-              <legend class="filter-title">Стоимость, ₽:</legend>
-              <ul class="filter-list">
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="low-price" type="number" name="low-price" min="0" max="15000" value="0"> от
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="high-price" type="number" name="high-price" min="0" max="15000" value="9000"> до
-                  </label>
-                </li>
-                <li class="filter-item">
-                  <label class="params-field">
-                    <input class="range-price" type="range" name="price-between" min="0" max="12000" value="9000"
-                      step="100">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <div class="filter-buttons-container">
-              <label class="filter-button">
-                <input class="button button-submit btn-blue" type="submit" value="Применить">
-              </label>
-              <label class="filter-button">
-                <input class="button button-reset btn-no-color" type="reset" value="Сбросить">
-              </label>
+            </div>
+            <div class="filter-field-right-wrapper">
+              <fieldset class="filter-field price-field">
+                <legend class="filter-title">Стоимость, ₽:</legend>
+
+                <ul class="filter-list">
+                  <li class="filter-item min-max-price-field">
+                    <label class="param-field">
+                      <input class="input-price-field low-price" type="number" name="low-price" min="0" max="15000" value="0">
+                      <span class="placeholder-price">от</span>
+                    </label>
+                    <label class="param-field">
+                      <input class="input-price-field high-price" type="number" name="high-price" min="0" max="15000" value="9000">
+                      <span class="placeholder-price">до</span>
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <label class="param-field">
+                      <input class="range-price" type="range" name="price-between" min="0" max="12000" value="9000"
+                        step="100">
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="filter-field buttons-field">
+                <button class="button btn-blue" type="submit">Применить</button>
+                <button class="button btn-no-color" type="reset">Сбросить</button>
+              </fieldset>
             </div>
           </form>
         </section>
