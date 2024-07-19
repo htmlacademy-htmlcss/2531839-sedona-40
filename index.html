@@ -240,6 +240,63 @@
         </a>
       </section>
     </footer>
+
+    <div class="modal-container-search-hotels">
+      <div class="modal">
+        <section class="modal-search">
+          <h2 class="modal-search-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="date-parameter">
+              <span class="placeholder-text">Дата Заезда:</span>
+              <input class="input-text-field check-in-date" type="text" name="check-in-date" placeholder="Дата заселения"  value="27 апреля 2020">
+            </label>
+            <label class="date-parameter">
+              <span class="placeholder-text">Дата Выезда:</span>
+              <input class="input-text-field check-out-date" type="text" name="check-out-date" placeholder="Дата выселения"  value="1 сентября 2023">
+            </label>
+
+            <label class="count-parameter adults" for="adults-count">
+              <span class="placeholder-text">Взрослые:</span>
+              <button class="button-minus-one" type="button">
+                <span class="visually-hidden">Минус 1</span>
+                <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" />
+                </svg>
+              </button>
+              <input id="adults-count" class="input-text-field count-input" type="text" name="adults-count" placeholder="1"  value="2">
+              <button class="button-plus-one" type="button">
+                <span class="visually-hidden">Плюс 1</span>
+                <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                </svg>
+              </button>
+            </label>
+            <label class="count-parameter children" for="children-count">
+              <span class="placeholder-text">Дети:</span>
+              <button class="button-minus-one" type="button">
+                <span class="visually-hidden">Минус 1</span>
+                <svg class="minus-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9V11H17V9H3Z" />
+                </svg>
+              </button>
+              <input id="children-count" class="input-text-field count-input" type="text" name="children-count" placeholder="1"  value="2">
+              <button class="button-plus-one" type="button">
+                <span class="visually-hidden">Плюс 1</span>
+                <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                </svg>
+              </button>
+            </label>
+
+            <button class="button btn-blue" type="submit">Найти</button>
+          </form>
+        </section>
+
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть окно</span>
+        </button>
+      </div>
+    </div>
   </body>
 
 </html>
