@@ -818,7 +818,7 @@ body {
   background-image: url("../images/catalog-html/catalog-background-blur.jpg");
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
-  /* background-size: cover; */
+  background-size: cover;
 }
 
 .main-title {
@@ -829,7 +829,7 @@ body {
   line-height: 78px;
 }
 
-/* Навигация по страницам */
+/* Catalog breadcrumbs navigation */
 .breadcrumbs {
   display: flex;
   align-items: center;
@@ -841,30 +841,28 @@ body {
   list-style-type: none;
 }
 
-.breadcrumbs-item {
-}
+/* .breadcrumbs-item {
+} */
 
 .breadcrumbs-link {
   text-decoration: none;
   color: #ffffff;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
 }
 
 .breadcrumbs-link:hover,
 .home-icon:hover {
-  /* color: rgba(255, 255, 255, 0.6); */
   opacity: 0.6;
 }
 .breadcrumbs-link:focus,
 .home-icon:focus {
+  opacity: 0.6;
   outline: none;
 }
 .breadcrumbs-link:active,
-.home-icon:focus {
-  /* color: rgba(255, 255, 255, 0.3); */
+.home-icon:active {
   opacity: 0.3;
 }
-
 
 .breadcrumbs-item:not(:last-child) {
   position: relative;
@@ -891,6 +889,8 @@ body {
   background-image: url("../images/catalog-html/home-icon.svg");
   background-repeat: no-repeat;
 }
+/* --- */
+
 
 /* Filter parameters */
 .filter-params {
@@ -941,7 +941,6 @@ body {
 .filter-field-right-wrapper .buttons-field {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 191px;
   min-height: 104px;
   margin-top: 56px;
@@ -997,9 +996,10 @@ body {
 .input-parameter[type="checkbox"] {
   appearance: none;
   border-radius: 4px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #ffffff;
+
 }
 
 .input-parameter[type="checkbox"]:checked {
@@ -1020,20 +1020,10 @@ body {
 .input-parameter[type="radio"] {
   appearance: none;
   border-radius: 50%;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: #ffffff;
 }
-
-/* .input-parameter[type="radio"]:checked + .label-text::before {
-  position: absolute;
-  transform: translateY(55%) translateX(-31.5px);
-  width: 11px;
-  height: 11px;
-  background-color: #3F5E72;
-  border-radius: 50%;
-  content: "";
-} */
 
 .input-parameter[type="radio"]:checked {
   background-image: url("../images/tick-circle.svg");
@@ -1059,11 +1049,14 @@ body {
   box-sizing: border-box;
   padding: 12px 20px;
   padding-right: 45px;
-  font-weight: 700;
-  line-height: 24px;
   border: none;
   border-radius: 4px;
   background-color: #F2F2F2;
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
   transition: background-color 0.5s;
 }
 
@@ -1488,7 +1481,8 @@ body {
 /* -Modal date hotels form- */
 .modal-container-search-hotels {
   position: fixed;
-  display: flex;
+  /* display: flex; */
+  display: none;
   top: 0;
   left: 0;
   width: 100%;
