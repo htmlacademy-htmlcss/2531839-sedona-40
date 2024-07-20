@@ -312,12 +312,12 @@ body {
 }
 
 .rec-first .rec-header-text {
-  padding: 0 290px;
+  padding: 0 250px;
   padding-top: 69px;
 }
 
 .rec-first .rec-main-text {
-  padding: 0 274px;
+  padding: 0 200px;
   padding-top: 25px;
   padding-bottom: 90px;
 }
@@ -338,7 +338,7 @@ body {
   position: relative;
   text-transform: uppercase;
   margin: 0;
-  padding: 0 27.5px;
+  padding: 0 24px;
   padding-bottom: 30px;
   /* border-bottom: 2px solid #ffffff; */
   margin-bottom: 30px;
@@ -351,6 +351,8 @@ body {
 .adv-main-text {
   margin: 0;
   padding: 0;
+  width: 234px;
+  margin-left: -2px;
 }
 
 .adv-header-text::before {
@@ -411,6 +413,7 @@ body {
 }
 
 .adv-first-container {
+  width: 230px;
   margin: auto 85px;
 }
 
@@ -467,8 +470,8 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 75px;
-  height: 72px; /* 74 70 */
+  width: 77px;
+  height: 72px;
   background-image: url("../images/index-html/advantage-icon-house.svg");
   background-size: 100% 100%;
 }
@@ -481,8 +484,8 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 75px;
-  height: 72px; /* 76 72 */
+  width: 76px;
+  height: 72px;
   background-image: url("../images/index-html/advantage-icon-food.svg");
   background-size: 100% 100%;
 }
@@ -495,8 +498,9 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 75px;
-  height: 72px; /* 64 76 */
+  width: 76px;
+  height: 76px;
+  margin-top: -2px;
   background-image: url("../images/index-html/advantage-icon-gift.svg");
   background-size: 100% 100%;
 }
@@ -510,7 +514,7 @@ body {
 
 .book-header-text {
   margin: 0;
-  padding: 0 304px;
+  padding: 0 250px;
   padding-top: 96px;
   color: #000000;
   font-weight: 700;
@@ -522,7 +526,7 @@ body {
 
 .book-main-text {
   margin: 0;
-  padding: 0 304px;
+  padding: 0 200px;
   padding-top: 20px;
   font-size: 22px;
   line-height: 26px;
@@ -557,6 +561,7 @@ body {
 
 .sub-header-text {
   margin: 0;
+  padding: 0 250px;
   padding-top: 96px;
   font-weight: 700;
   font-size: 30px;
@@ -566,6 +571,7 @@ body {
 
 .sub-main-text {
   margin: 0;
+  padding: 0 200px;
   padding-top: 20px;
   font-size: 22px;
   line-height: 26px;
@@ -580,18 +586,13 @@ body {
 }
 
 .get-subscription .email {
-  /* position: relative; */
-  line-height: 24px;
+  width: 452px;
   padding: 14px 20px;
-  width: 412px;
+  padding-bottom: 12px;
   border-radius: 4px 0 0 4px;
-  border: none;
-  background-color: #F2F2F2;
-
 }
 
 .get-subscription .button {
-  /* position: relative; */
   font-size: 20px;
   line-height: 36px;
   padding: 8px 50px;
