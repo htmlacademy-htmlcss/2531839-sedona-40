@@ -903,7 +903,8 @@ body {
 .param-field:hover {
   opacity: 0.6;
 }
-.param-field:focus {
+.param-field:focus,
+.input-parameter:focus-visible {
   outline: 3px solid #83B3D3;
 }
 .param-field:active {
@@ -955,6 +956,9 @@ body {
   background-size: 20px 20px;
 }
 
+.input-parameter[type="checkbox"] {
+
+}
 
 /* Price range */
 .min-max-price-field {
