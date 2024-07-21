@@ -425,20 +425,17 @@ body {
   min-height: 385px;
 }
 
-/* .adv-first .adv-text-container:nth-child(1) */
-.adv-first .adv-item:nth-child(1),
-.adv-first .adv-item:nth-child(5) {
+.adv-first .adv-item-with-img {
   width: 1200px;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
 
-.adv-first .adv-item:nth-child(2),
-.adv-first .adv-item:nth-child(4) {
+.very-light-blue-bg {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages .adv-item:nth-child(3) {
+.light-blue-bg {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -486,9 +483,8 @@ body {
   width: 400px;
 }
 
-.adv-second .adv-item:nth-child(1),
-.adv-second .adv-item:nth-child(3) {
-  background-color: rgba(131, 179, 211, 0.12);
+.white-bg {
+  background-color: #FFFFFF;
 }
 
 .adv-second .adv-header-text {
