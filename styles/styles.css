@@ -1156,12 +1156,6 @@ body {
   font-size: 18px;
   line-height: 21px;
 }
-/* padding-left for Firefox */
-@-moz-document url-prefix() {
-  .sort-type {
-    padding-left: 17px;
-  }
-}
 
 .sort-type:hover {
   outline-color: #68A2CA;
