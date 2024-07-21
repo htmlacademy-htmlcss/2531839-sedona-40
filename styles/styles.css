@@ -30,8 +30,38 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  /* background-color: #F2F2F2; */
-  background-color: #ffffff;
+  background-color: #F2F2F2;
+  z-index: -1;
+}
+
+/* body::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: auto;
+  min-height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  background-color: red;
+  z-index: -1;
+} */
+
+.background-page-color {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+
+  width: 1200px;
+  min-height: 100%;
+  background-color: #F2F2F2;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -39,7 +69,7 @@ body {
   display: inline-block;
   border-radius: 4px;
   padding: 8px 34px;
-  color:#ffffff;
+  color:#FFFFFF;
   background-color: #756157;
   font-family: inherit;
   font-weight: 700;
@@ -49,6 +79,7 @@ body {
   text-decoration: none;
   text-align: center;
   border: none;
+  cursor: pointer;
   transition: background-color 0.5s, color 0.5s, opacity 0.5s;
 }
 
@@ -132,6 +163,7 @@ body {
   min-height: 64px;
   padding: 0 70px;
   margin: 0 auto;  /* для выравнивания навигации (heder-а) по центру страницы */
+  background-color: #FFFFFF;
 }
 
 .logo {
@@ -255,7 +287,7 @@ body {
   font-size: 10px;
   line-height: 10px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   z-index: 1;
 }
 
@@ -295,6 +327,7 @@ body {
 .recommendation {
   width: 1200px;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .rec-header-text {
@@ -341,7 +374,7 @@ body {
   margin: 0;
   padding: 0 24px;
   padding-bottom: 30px;
-  /* border-bottom: 2px solid #ffffff; */
+  /* border-bottom: 2px solid #FFFFFF; */
   margin-bottom: 30px;
 
   font-weight: 700;
@@ -397,7 +430,7 @@ body {
 .adv-first .adv-item:nth-child(5) {
   width: 1200px;
   background-color: #82B3D3;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .adv-first .adv-item:nth-child(2),
@@ -511,6 +544,7 @@ body {
 
 .book-hotel {
   width: 1200px;
+  background-color: #FFFFFF;
 }
 
 .book-header-text {
@@ -551,7 +585,7 @@ body {
 /* subscription */
 
 .subscription {
-  color:#ffffff;
+  color:#FFFFFF;
   width: 1200px;
   min-height: 415px;
   background-size: 100% 100%;
@@ -612,6 +646,7 @@ body {
   padding: 40px 70px 30px 70px;
   margin: 0 auto;  /* для выравнивания footer-а по центру страницы */
   min-height: 120px;
+  background-color: #FFFFFF;
 }
 
 /* social media icons */
@@ -736,7 +771,7 @@ body {
   box-sizing: border-box;
   width: 1200px;
   min-height: 412px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #aa9388;
   background-image: url("../images/catalog-html/catalog-background-blur.jpg");
   background-repeat: no-repeat;
@@ -769,7 +804,7 @@ body {
 
 .breadcrumbs-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
   transition: opacity 0.5s;
 }
 
@@ -922,7 +957,7 @@ body {
   border-radius: 4px;
   min-width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 
 }
 
@@ -946,7 +981,7 @@ body {
   border-radius: 50%;
   min-width: 20px;
   height: 20px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .input-parameter[type="radio"]:checked {
@@ -1033,7 +1068,7 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 .range-toggle {
@@ -1042,7 +1077,7 @@ body {
   height: 20px;
   border-radius: 5px;
   border: none;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   cursor: pointer;
   transition: box-shadow 0.5s;
 }
@@ -1075,7 +1110,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 1060px;
-  margin: 0 70px;
+  padding: 0 70px;
+  background-color: #FFFFFF;
 
   /* align-items: center; */
   /* padding: 50px 70px 60px 70px; */
@@ -1107,7 +1143,7 @@ body {
   margin-right: 70px;
   align-self: center;
 
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   outline: 2px solid #E5E5E5;
   outline-offset: -2px;
   border-radius: 4px;
@@ -1414,8 +1450,8 @@ body {
 /* subscription */
 .main-inner .subscription {
   background-image: none;
-  background-color: transparent;
   color: #000000;
+  background-color: #FFFFFF;
 }
 
 .main-inner .sub-main-text {
@@ -1445,7 +1481,7 @@ body {
   /* min-height: 576px; */
   border-radius: 30px;
   padding: 64px 70px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
 }
@@ -1665,7 +1701,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #333333;
 
   position: absolute;
