@@ -604,6 +604,7 @@ body {
   padding: 14px 20px;
   padding-bottom: 12px;
   border-radius: 4px 0 0 4px;
+  font-weight: 400;
 }
 
 .get-subscription .button {
@@ -928,7 +929,7 @@ body {
 
 /* Checkbox */
 .input-parameter {
-  margin: auto 0;
+  margin: 0;
 }
 
 .input-parameter[type="checkbox"] {
@@ -1112,6 +1113,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .sort-type {
