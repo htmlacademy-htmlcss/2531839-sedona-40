@@ -125,6 +125,18 @@ body {
   outline: none;
 }
 
+/* disabled buttons */
+.button:disabled {
+  background-color: #E5E5E5;
+  color: #FFF;
+}
+
+.btn-no-color:disabled,
+.btn-no-color:disabled:hover {
+  background-color: transparent;
+  opacity: 0.1;
+}
+
 
 .visually-hidden {
   position: absolute;
@@ -800,7 +812,7 @@ body {
 .breadcrumbs-link:focus,
 .home-icon:focus {
   opacity: 0.6;
-  outline: none;
+  outline: 3px solid #82B3D3;
 }
 
 .breadcrumbs-link:active,
@@ -910,30 +922,17 @@ body {
 .param-field-price {
   position: relative;
   display: flex;
-  transition: opacity 0.5s, outline 0.5s;
+  transition: opacity 0.5s;
 }
 
 .filter-item:not(:last-child) {
   padding-bottom: 16px;
 }
 
-/* input effects */
-.param-field:hover {
-  opacity: 0.6;
-}
-
-.param-field:focus,
-.input-parameter:focus-visible {
-  outline: 3px solid #83B3D3;
-}
-
-.param-field:active {
-  opacity: 0.3;
-}
-
 /* checkbox */
 .input-parameter {
   margin: 0;
+  transition: opacity 0.5s;
 }
 
 .input-parameter[type="checkbox"] {
@@ -957,6 +956,7 @@ body {
   line-height: 23px;
   align-self: center;
   padding-left: 16px;
+  transition: opacity 0.5s;
 }
 
 /* radiobutton */
@@ -974,6 +974,28 @@ body {
   background-position: center;
   background-size: 20px 20px;
 }
+
+/* input effects */
+.input-parameter:hover,
+.input-parameter:hover + .label-text {
+  opacity: 0.6;
+}
+
+.input-parameter:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
+.input-parameter:not(:disabled):active,
+.input-parameter:not(:disabled):active + .label-text {
+  opacity: 0.3;
+}
+
+/* disable input checkboxed and radiobuttons */
+.input-parameter:disabled,
+.input-parameter:disabled + .label-text {
+  opacity: 0.3;
+}
+
 
 /* price range */
 .min-max-price-field {
@@ -1144,6 +1166,12 @@ body {
 
 .sort-type:focus {
   outline-color: #68A2CA;
+}
+
+.sort-type:disabled,
+.sort-type:disabled:hover {
+  opacity: 0.3;
+  outline-color: rgb(0 0 0 / 30%);
 }
 
 /* view catalog types */
