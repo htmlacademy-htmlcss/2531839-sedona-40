@@ -814,7 +814,7 @@ body {
   right: -18px;
   width: 8px;
   height: 21px;
-  background-image: url("../images/catalog-html/white-arrow-right.svg");
+  background-image: url("../images/white-arrow-right.svg");
   background-repeat: no-repeat;
 }
 
@@ -1132,7 +1132,7 @@ body {
   transition: outline-color 0.5s;
 
   appearance: none;
-  background-image: url("../images/catalog-html/black-arrow-bottom.svg");
+  background-image: url("../images/black-arrow-bottom.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 
