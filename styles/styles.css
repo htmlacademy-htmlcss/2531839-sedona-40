@@ -45,7 +45,6 @@ body {
   box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
 
-
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -138,7 +137,6 @@ body {
   opacity: 0.1;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -149,7 +147,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 /* Pages */
 
@@ -189,7 +186,6 @@ body {
   outline: none;
 }
 
-
 .nav-pages-list a {
   font-weight: 700;
   font-size: 20px;
@@ -217,12 +213,10 @@ body {
   width: 268px;
 }
 
-/* .nav-item {
-} */
-
 .nav-link {
   position: relative;
   display: block;
+  font-family: inherit;
   color: #000;
   transition: background-color 0.5s, opacity 0.5s;
 }
@@ -296,7 +290,6 @@ body {
   z-index: 1;
 }
 
-
 /* ---Main--- */
 
 .main-container {
@@ -307,7 +300,6 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
 
 /* hero */
 .hero {
@@ -324,7 +316,6 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
 }
-
 
 /* recommendation-first */
 .recommendation {
@@ -358,7 +349,6 @@ body {
   padding-top: 25px;
   padding-bottom: 90px;
 }
-
 
 /* advantages-first */
 .advantages {
@@ -449,7 +439,6 @@ body {
   padding: 50px 0;
 }
 
-
 /* recommendation-second */
 .rec-second .rec-header-text {
   padding: 0 347px;
@@ -461,7 +450,6 @@ body {
   padding-top: 20px;
   padding-bottom: 64px;
 }
-
 
 /* advantages-second */
 .adv-second-container {
@@ -534,7 +522,6 @@ body {
   background-size: 100% 100%;
 }
 
-
 /* book-hotel */
 .book-hotel {
   width: 1200px;
@@ -574,7 +561,6 @@ body {
   line-height: 36px;
   padding: 8px 50px;
 }
-
 
 /* subscription */
 .subscription {
@@ -629,7 +615,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-
 /* ---Footer--- */
 
 /* page-footer */
@@ -662,6 +647,7 @@ body {
   position: relative;
   display: block;
   height: 40px;
+  font-family: inherit;
   transition: fill 0.5s;
 }
 
@@ -698,6 +684,7 @@ body {
   min-height: 40px;
   color: #000;
   text-decoration: none;
+  font-family: inherit;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -728,6 +715,7 @@ body {
   margin: auto 0;
   width: 115px;
   height: 33px;
+  font-family: inherit;
 }
 
 .social-media-academy-icon {
@@ -752,8 +740,6 @@ body {
   fill: rgb(117 97 87 / 30%);
   outline: none;
 }
-
-
 
 /* ----- catalog.html ----- */
 
@@ -795,11 +781,9 @@ body {
   list-style-type: none;
 }
 
-/* .breadcrumbs-item {
-} */
-
 .breadcrumbs-link {
   text-decoration: none;
+  font-family: inherit;
   color: #FFF;
   transition: opacity 0.5s;
 }
@@ -876,7 +860,6 @@ body {
   margin-left: 30px;
 }
 
-
 /* right field with price and buttons */
 .filter-field-right-wrapper {
   display: flex;
@@ -939,7 +922,6 @@ body {
   min-width: 20px;
   height: 20px;
   background-color: #FFF;
-
 }
 
 .input-parameter[type="checkbox"]:checked {
@@ -1105,7 +1087,6 @@ body {
   outline: 2px solid #83B3D3;
 }
 
-
 /* catalog */
 .catalog {
   display: flex;
@@ -1182,9 +1163,6 @@ body {
   list-style-type: none;
 }
 
-/* .catalog-view-item {
-} */
-
 .catalog-view-item:not(:nth-child(3n)) {
   margin-right: 8px;
 }
@@ -1197,9 +1175,10 @@ body {
   outline-offset: -2px;
   border-radius: 4px;
   border: none;
-  transition: outline-color 0.5s;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: inherit;
+  transition: outline-color 0.5s;
 }
 
 .catalog-view-item .current-view {
@@ -1230,7 +1209,6 @@ body {
 .link-view:active {
   outline-color: #000;
 }
-
 
 /* ul hotels-list */
 .hotels-list {
@@ -1264,6 +1242,7 @@ body {
 
 .hotel-image {
   display: block;
+  font-family: inherit;
 }
 
 .img-hotel-link {
@@ -1302,7 +1281,6 @@ body {
   opacity: 0.3;
   outline: none;
 }
-
 
 .hotel-name {
   margin: 0;
@@ -1400,13 +1378,14 @@ body {
   padding: 10px;
   border-radius: 4px;
   background-color: #82B3D3;
-  transition: color 0.5s, background-color 0.5s;
   text-decoration: none;
   color: #FFF;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 .pagination-link.pagination-current {
@@ -1430,7 +1409,6 @@ body {
   color: rgb(255 255 255 / 30%);
 }
 
-
 /* subscription */
 .main-inner .subscription {
   background-image: none;
@@ -1441,7 +1419,6 @@ body {
 .main-inner .sub-main-text {
   color: #333;
 }
-
 
 /* Modal date hotels form */
 .modal-container-search-hotels {
@@ -1537,7 +1514,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
 }
 
 .date-parameter::before {
