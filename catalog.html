@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -22,7 +23,7 @@
               <a class="nav-link" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">О Седоне</a>
+              <a class="nav-link" href="about-sedona.html">О Седоне</a>
             </li>
             <li class="nav-item">
               <a class="nav-link current-page" href="catalog.html">Гостиницы</a>
@@ -31,7 +32,7 @@
 
           <ul class="nav-user-list">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="search.html">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                   viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -41,7 +42,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link heart-icon" href="#">
+              <a class="nav-link heart-icon" href="favorites.html">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                   viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -51,7 +52,7 @@
               </a>
             </li>
             <li class="nav-item-btn">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button" href="about-sedona.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -131,13 +132,11 @@
                   <legend class="filter-title">Стоимость, ₽:</legend>
                   <div class="min-max-price-field">
                     <label class="param-field-price">
-                      <input class="input-text-field low-price" type="number" name="low-price" min="0" max="15000"
-                        value="0">
+                      <input class="input-text-field low-price" type="text" name="low-price" placeholder="0" value="0" required>
                       <span class="placeholder-price">от</span>
                     </label>
                     <label class="param-field-price">
-                      <input class="input-text-field high-price" type="number" name="high-price" min="0" max="15000"
-                        value="9000">
+                      <input class="input-text-field high-price" type="text" name="high-price" placeholder="9000" value="9000" required>
                       <span class="placeholder-price">до</span>
                     </label>
                   </div>
@@ -291,7 +290,7 @@
             <form class="get-subscription" action="https://echo.htmlacademy.ru" method="POST">
               <label for="email-field" class="visually-hidden">Почта</label>
               <input class="input-text-field email" id="email-field" type="email" name="user-email"
-                placeholder="Ваш e-mail">
+                placeholder="Ваш e-mail" required>
               <button class="button btn-blue" type="submit">Подписаться</button>
             </form>
           </section>

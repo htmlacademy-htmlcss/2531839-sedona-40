@@ -37,13 +37,13 @@ body {
 .background-page-color {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   margin: 0 auto;
   width: 1200px;
   min-height: 100%;
   background-color: #FFF;
   box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
 }
-
 
 .button {
   display: inline-block;
@@ -70,7 +70,7 @@ body {
 
 .button:focus {
   background-color: #615048;
-  outline: none;
+  /* outline: none; */
 }
 
 .button:active {
@@ -88,7 +88,7 @@ body {
 
 .btn-blue:focus {
   background-color: #68A2CA;
-  outline: none;
+  /* outline: none; */
 }
 
 /* button green effects */
@@ -102,7 +102,7 @@ body {
 
 .btn-green:focus {
   background-color: #6C9E42;
-  outline: none;
+  /* outline: none; */
 }
 
 /* button without-color effects */
@@ -137,7 +137,6 @@ body {
   opacity: 0.1;
 }
 
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -148,7 +147,6 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 /* Pages */
 
@@ -188,7 +186,6 @@ body {
   outline: none;
 }
 
-
 .nav-pages-list a {
   font-weight: 700;
   font-size: 20px;
@@ -216,12 +213,10 @@ body {
   width: 268px;
 }
 
-/* .nav-item {
-} */
-
 .nav-link {
   position: relative;
   display: block;
+  font-family: inherit;
   color: #000;
   transition: background-color 0.5s, opacity 0.5s;
 }
@@ -295,7 +290,6 @@ body {
   z-index: 1;
 }
 
-
 /* ---Main--- */
 
 .main-container {
@@ -306,7 +300,6 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
-
 
 /* hero */
 .hero {
@@ -323,7 +316,6 @@ body {
   padding-top: 51px;
   padding-bottom: 82px;
 }
-
 
 /* recommendation-first */
 .recommendation {
@@ -357,7 +349,6 @@ body {
   padding-top: 25px;
   padding-bottom: 90px;
 }
-
 
 /* advantages-first */
 .advantages {
@@ -448,7 +439,6 @@ body {
   padding: 50px 0;
 }
 
-
 /* recommendation-second */
 .rec-second .rec-header-text {
   padding: 0 347px;
@@ -460,7 +450,6 @@ body {
   padding-top: 20px;
   padding-bottom: 64px;
 }
-
 
 /* advantages-second */
 .adv-second-container {
@@ -533,7 +522,6 @@ body {
   background-size: 100% 100%;
 }
 
-
 /* book-hotel */
 .book-hotel {
   width: 1200px;
@@ -573,7 +561,6 @@ body {
   line-height: 36px;
   padding: 8px 50px;
 }
-
 
 /* subscription */
 .subscription {
@@ -628,7 +615,6 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-
 /* ---Footer--- */
 
 /* page-footer */
@@ -661,6 +647,7 @@ body {
   position: relative;
   display: block;
   height: 40px;
+  font-family: inherit;
   transition: fill 0.5s;
 }
 
@@ -693,10 +680,11 @@ body {
 .phone-number {
   display: block;
   margin: auto;
-  width: 600px;
+  width: 400px;
   min-height: 40px;
   color: #000;
   text-decoration: none;
+  font-family: inherit;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
@@ -727,6 +715,7 @@ body {
   margin: auto 0;
   width: 115px;
   height: 33px;
+  font-family: inherit;
 }
 
 .social-media-academy-icon {
@@ -751,8 +740,6 @@ body {
   fill: rgb(117 97 87 / 30%);
   outline: none;
 }
-
-
 
 /* ----- catalog.html ----- */
 
@@ -794,11 +781,9 @@ body {
   list-style-type: none;
 }
 
-/* .breadcrumbs-item {
-} */
-
 .breadcrumbs-link {
   text-decoration: none;
+  font-family: inherit;
   color: #FFF;
   transition: opacity 0.5s;
 }
@@ -858,10 +843,6 @@ body {
   border-style: none;
 }
 
-.filter-field:focus-within {
-  outline: 3px solid #82B3D3;
-}
-
 /* left field with checkboxes and radiobuttons */
 .filter-field-left-wrapper {
   display: flex;
@@ -878,7 +859,6 @@ body {
   min-width: 151px;
   margin-left: 30px;
 }
-
 
 /* right field with price and buttons */
 .filter-field-right-wrapper {
@@ -942,7 +922,6 @@ body {
   min-width: 20px;
   height: 20px;
   background-color: #FFF;
-
 }
 
 .input-parameter[type="checkbox"]:checked {
@@ -1004,10 +983,6 @@ body {
   margin-bottom: 44px;
 }
 
-/* .min-max-price-field .param-field {
-  width: 143px;
-} */
-
 .input-text-field {
   width: 143px;
   box-sizing: border-box;
@@ -1021,17 +996,6 @@ body {
   font-weight: 700;
   line-height: 24px;
   transition: background-color 0.5s;
-}
-
-/* remove up/down pins */
-.param-field-price .input-text-field::-webkit-outer-spin-button,
-.param-field-price .input-text-field::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
-.param-field-price .input-text-field[type="number"] {
-  appearance: textfield; /* for firefox */
 }
 
 .low-price {
@@ -1107,7 +1071,6 @@ body {
   box-shadow: 0 7px 15px 0 rgb(0 0 0 / 40%);
   outline: 2px solid #83B3D3;
 }
-
 
 /* catalog */
 .catalog {
@@ -1185,9 +1148,6 @@ body {
   list-style-type: none;
 }
 
-/* .catalog-view-item {
-} */
-
 .catalog-view-item:not(:nth-child(3n)) {
   margin-right: 8px;
 }
@@ -1200,9 +1160,10 @@ body {
   outline-offset: -2px;
   border-radius: 4px;
   border: none;
-  transition: outline-color 0.5s;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: inherit;
+  transition: outline-color 0.5s;
 }
 
 .catalog-view-item .current-view {
@@ -1233,7 +1194,6 @@ body {
 .link-view:active {
   outline-color: #000;
 }
-
 
 /* ul hotels-list */
 .hotels-list {
@@ -1267,6 +1227,7 @@ body {
 
 .hotel-image {
   display: block;
+  font-family: inherit;
 }
 
 .img-hotel-link {
@@ -1305,7 +1266,6 @@ body {
   opacity: 0.3;
   outline: none;
 }
-
 
 .hotel-name {
   margin: 0;
@@ -1403,13 +1363,14 @@ body {
   padding: 10px;
   border-radius: 4px;
   background-color: #82B3D3;
-  transition: color 0.5s, background-color 0.5s;
   text-decoration: none;
   color: #FFF;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
+  transition: color 0.5s, background-color 0.5s;
 }
 
 .pagination-link.pagination-current {
@@ -1433,7 +1394,6 @@ body {
   color: rgb(255 255 255 / 30%);
 }
 
-
 /* subscription */
 .main-inner .subscription {
   background-image: none;
@@ -1444,7 +1404,6 @@ body {
 .main-inner .sub-main-text {
   color: #333;
 }
-
 
 /* Modal date hotels form */
 .modal-container-search-hotels {
@@ -1540,7 +1499,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
 }
 
 .date-parameter::before {

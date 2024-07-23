@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
@@ -22,7 +23,7 @@
               <a class="nav-link current-page" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">О Седоне</a>
+              <a class="nav-link" href="about-sedona.html">О Седоне</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="catalog.html">Гостиницы</a>
@@ -31,7 +32,7 @@
 
           <ul class="nav-user-list">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="search.html">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                   viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -41,7 +42,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link heart-icon" href="#">
+              <a class="nav-link heart-icon" href="favorites.html">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                   viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -51,7 +52,7 @@
               </a>
             </li>
             <li class="nav-item-btn">
-              <a class="button" href="#">Хочу сюда!</a>
+              <a class="button" href="about-sedona.html">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -247,12 +248,12 @@
               <label class="date-parameter check-in-message">
                 <span class="placeholder-text">Дата Заезда:</span>
                 <input class="input-text-field check-in-date" type="text" name="check-in-date"
-                  placeholder="Дата заселения" value="27 апреля 2020">
+                  placeholder="Дата заселения" value="27 апреля 2020" required>
               </label>
               <label class="date-parameter check-out-message">
                 <span class="placeholder-text">Дата Выезда:</span>
                 <input class="input-text-field check-out-date" type="text" name="check-out-date"
-                  placeholder="Дата выселения" value="1 сентября 2023">
+                  placeholder="Дата выселения" value="1 сентября 2023" required>
               </label>
 
               <div class="people-count-hotel-search">
@@ -266,7 +267,7 @@
                     </svg>
                   </button>
                   <input id="adults-count" class="input-text-field count-input" type="text" name="adults-count"
-                    placeholder="1" value="2">
+                    placeholder="1" value="2" required>
                   <button class="button-plus-one" type="button">
                     <span class="visually-hidden">Плюс 1</span>
                     <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
@@ -300,7 +301,7 @@
                     </svg>
                   </button>
                   <input id="children-count" class="input-text-field count-input" type="text" name="children-count"
-                    placeholder="1" value="2">
+                    placeholder="1" value="2" required>
                   <button class="button-plus-one" type="button">
                     <span class="visually-hidden">Плюс 1</span>
                     <svg class="plus-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
