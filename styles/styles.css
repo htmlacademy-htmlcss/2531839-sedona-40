@@ -1233,13 +1233,14 @@ body {
   outline-color: #000;
 }
 
+
 /* ul hotels-list */
 .hotels-list {
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 340px);
   gap: 20px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding: 0;
   padding-bottom: 40px;
   border-bottom: 1px solid #e6e6e6;
@@ -1248,29 +1249,28 @@ body {
 }
 
 .hotel-item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "img       img      img"
+    "title    title   title"
+    "hotel-name .     price"
+    "about      .  favorite"
+    "stars      .    rating";
+  grid-template-columns: 140px 20px 140px;
+  grid-template-rows: 212px repeat(4, min-content);
 
+  padding: 20px;
   outline: 1px solid #e6e6e6;
   border-radius: 4px;
-  /* display: grid; */
-  /* grid-template-columns: 140px 140px; */
-  /* gap: 16px 20px; */
-
-  /* width: 340px; */
-  /* min-height: 438px; */
-
-  /* border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  padding: 20px;
-  width: 340px;
-  height: 438px; */
+  row-gap: 16px;
 }
 
 .hotel-image {
   display: block;
+}
+
+.img-hotel-link {
+  grid-area: img;
 }
 
 .hotel-title {
@@ -1283,8 +1283,12 @@ body {
   padding: 0;
 }
 
+.title-hotel-link {
+  grid-area: title;
+}
+
 .link-to-hotel {
-  align-self: start;
+  margin-right: auto;
   transition: opacity 0.5s;
 }
 
@@ -1302,38 +1306,17 @@ body {
   outline: none;
 }
 
-.params-list {
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.left-params-item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 140px;
-  align-items: flex-start;
-}
-
-.right-params-item {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 140px;
-  align-items: flex-end;
-}
 
 .hotel-name {
   margin: 0;
   padding: 0;
+  grid-area: hotel-name;
 }
 
 .hotel-about-link {
   padding: 8px 0;
   align-self: stretch;
+  grid-area: about;
 }
 
 .stars-rating {
@@ -1343,6 +1326,7 @@ body {
   background-image: url("../images/catalog-html/rating-star.svg");
   background-repeat: repeat-x;
   background-position: center left;
+  grid-area: stars;
 }
 
 .one-star {
@@ -1366,13 +1350,17 @@ body {
 }
 
 .hotel-price {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
+  grid-area: price;
 }
 
 .add-to-favorites {
   padding: 8px 0;
   align-self: stretch;
+  grid-area: favorite;
 }
 
 .rating-text {
@@ -1386,6 +1374,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  grid-area: rating;
 }
 
 /* ul pagination */
