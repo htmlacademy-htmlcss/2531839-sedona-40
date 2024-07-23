@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Алифировец](https://up.htmlacademy.ru/htmlcss/40/user/2531839).
-* Наставник: `Неизвестно`.
+* Наставник: [Валера Хаслер](https://htmlacademy.ru/profile/id224163).
+* Проект: [Мой сайт (sedona)](https://evgeny-qa.github.io/sedona-40/).
 
 ---
 
