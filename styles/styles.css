@@ -785,6 +785,7 @@ body {
 /* catalog breadcrumbs navigation */
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -865,6 +866,7 @@ body {
 /* left field with checkboxes and radiobuttons */
 .filter-field-left-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 371px;
 }
@@ -1180,7 +1182,7 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 160px;
+  min-width: 160px;
   list-style-type: none;
 }
 
@@ -1258,7 +1260,6 @@ body {
     "stars      .    rating";
   grid-template-columns: 140px 20px 140px;
   grid-template-rows: 212px repeat(4, min-content);
-
   padding: 20px;
   outline: 1px solid #e6e6e6;
   border-radius: 4px;
@@ -1314,7 +1315,7 @@ body {
 }
 
 .hotel-about-link {
-  padding: 8px 0;
+  padding: 8px 15px;
   align-self: stretch;
   grid-area: about;
 }
@@ -1358,14 +1359,14 @@ body {
 }
 
 .add-to-favorites {
-  padding: 8px 0;
+  padding: 8px 15px;
   align-self: stretch;
   grid-area: favorite;
 }
 
 .rating-text {
   margin: 0;
-  padding: 8px 0;
+  padding: 8px 15px;
   padding-top: 9px;
   background-color: #F2F2F2;
   align-self: stretch;
@@ -1380,14 +1381,16 @@ body {
 /* ul pagination */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   min-height: 60px;
 }
 
 .pagination-item {
   list-style-type: none;
+  padding-bottom: 10px;
 }
 
 .pagination-item:not(:last-child) {
