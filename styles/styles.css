@@ -70,7 +70,7 @@ body {
 
 .button:focus {
   background-color: #615048;
-  outline: none;
+  /* outline: none; */
 }
 
 .button:active {
@@ -88,7 +88,7 @@ body {
 
 .btn-blue:focus {
   background-color: #68A2CA;
-  outline: none;
+  /* outline: none; */
 }
 
 /* button green effects */
@@ -102,7 +102,7 @@ body {
 
 .btn-green:focus {
   background-color: #6C9E42;
-  outline: none;
+  /* outline: none; */
 }
 
 /* button without-color effects */
@@ -693,7 +693,7 @@ body {
 .phone-number {
   display: block;
   margin: auto;
-  width: 600px;
+  width: 400px;
   min-height: 40px;
   color: #000;
   text-decoration: none;
@@ -856,10 +856,6 @@ body {
   margin: 0;
   padding: 0;
   border-style: none;
-}
-
-.filter-field:focus-within {
-  outline: 3px solid #82B3D3;
 }
 
 /* left field with checkboxes and radiobuttons */
