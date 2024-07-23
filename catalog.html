@@ -132,12 +132,12 @@
                   <div class="min-max-price-field">
                     <label class="param-field-price">
                       <input class="input-text-field low-price" type="number" name="low-price" min="0" max="15000"
-                        value="0">
+                        value="0" required>
                       <span class="placeholder-price">от</span>
                     </label>
                     <label class="param-field-price">
                       <input class="input-text-field high-price" type="number" name="high-price" min="0" max="15000"
-                        value="9000">
+                        value="9000" required>
                       <span class="placeholder-price">до</span>
                     </label>
                   </div>
@@ -291,7 +291,7 @@
             <form class="get-subscription" action="https://echo.htmlacademy.ru" method="POST">
               <label for="email-field" class="visually-hidden">Почта</label>
               <input class="input-text-field email" id="email-field" type="email" name="user-email"
-                placeholder="Ваш e-mail">
+                placeholder="Ваш e-mail" required>
               <button class="button btn-blue" type="submit">Подписаться</button>
             </form>
           </section>
